@@ -3,12 +3,14 @@
   <head>
     <title>Saasapp</title>
     <%= csrf_meta_tags %>
+    <!-- Add in a less shitty font -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <!-- This is a Bootstrap navbar I think -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class='container'>
         <div class="navbar-header">
@@ -18,14 +20,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to "/", class: "navbar-brand" do %>
+          <!-- Main brand icon -->
+          <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-group"></i>
             DevMatch
           <% end %>
         </div>
+        <!-- Can collapse into a menu -->
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "About", "/about" %></li>
+            <li><%= link_to "About", about_path %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- main navbar end -->
