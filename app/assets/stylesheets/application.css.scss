@@ -13,9 +13,13 @@
  *= require_tree .
  *= require_self
  */
- 
+
+/* Use the work of others to make it seem like we know what we're doing
+Bootstrap is some pre-made CSS and Font Awesome gives us icons */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // Typography Styles
 h1, h2, h3 {
@@ -47,6 +51,7 @@ h1, h2, h3 {
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: white;
+    // Holy shit! We can remove a whole fucking ruleset!
     &:hover {
         color: white;
         opacity: 0.75;
