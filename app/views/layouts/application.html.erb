@@ -37,6 +37,11 @@
       </div><!-- main navbar end -->
     </nav>
     
+    <div class="container">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+    </div>  
     <%= yield %>
 
   </body>
