@@ -3,6 +3,8 @@
   
   <%= hidden_field_tag 'plan', params[:plan] %>
 
+  <div class="payment-errors text-danger"></div>
+
   <div class="field form-group">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, class: 'form-control' %>
@@ -33,7 +35,7 @@
   
   <div class="form-group">
       <%= label_tag :card_month, "Card Expiration Date" %>
-      <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card-month"}%>
+      <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"}%>
       <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"}%>
   </div>
 
