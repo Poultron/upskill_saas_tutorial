@@ -40,7 +40,6 @@ $(document).on('turbolinks:load', function(){
         if(!Stripe.card.validateExpiry(expMonth, expYear)) {
             error = true;
             alert('The expiration date appears to be invalid');
-            theForm.find('.payment-errors').text(expMonth + " " + expYear)
         }
         
         if (error) {
