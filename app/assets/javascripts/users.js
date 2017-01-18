@@ -1,5 +1,4 @@
-/* global $ */
-/* global Stripe */
+/* global $, Stripe */
 // Document ready
 $(document).on('turbolinks:load', function(){
     var theForm = $('#pro_form');
