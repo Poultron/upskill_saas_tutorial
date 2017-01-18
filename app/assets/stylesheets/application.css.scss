@@ -42,6 +42,19 @@ h1, h2, h3 {
     padding-bottom: 100px;
 }
 
+.alert-notice, .alert-alert {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-top: -15px;
+    color: white;
+}
+
+.flash-container {
+    position: absolute;
+    width: 100%;
+}
+
 // Hide log in/log out messages in a very inelegant way
 .alert-notice {
     display: none;
@@ -51,31 +64,30 @@ h1, h2, h3 {
     margin-top: 30px;
 }
 
-// Check out our nav styles you fucko
+// Check out our nav styles
 
-// Let's look a little more fucking professional
+// Let's look a little more professional
 .navbar-brand {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
 
-// I don't want a stupid line fucking everything up
+// I don't want a stupid line messing everything up
 .navbar {
     border: none;
 }
 
-// So you can actually see the goddamn text
+// So you can actually see the text
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: white;
-    // Holy shit! We can remove a whole fucking ruleset!
     &:hover {
         color: white;
         opacity: 0.75;
     }
 }
 
-// Make our hamburger less shitty
+// Make our hamburger less dumb
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
